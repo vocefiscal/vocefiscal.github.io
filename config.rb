@@ -55,11 +55,6 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  activate :deploy do |deploy|
-    deploy.method = :git
-    deploy.strategy = :submodule
-    deploy.build_before = true # default: false
-  end
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -74,4 +69,10 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.strategy = :submodule
+  deploy.build_before = true # default: false
 end
