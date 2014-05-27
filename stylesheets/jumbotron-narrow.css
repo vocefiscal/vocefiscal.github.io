@@ -1,0 +1,82 @@
+/* Space out content a bit */
+/* line 3, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+/* line 11, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+/* Custom page header */
+/* line 17, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+.header {
+  border-bottom: 1px solid #e5e5e5; }
+
+/* Make the masthead heading the same height as the navigation */
+/* line 21, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px; }
+
+/* Custom page footer */
+/* line 29, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5; }
+
+/* Customize container */
+@media (min-width: 768px) {
+  /* line 37, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+  .container {
+    max-width: 730px; } }
+/* line 41, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+.container-narrow > hr {
+  margin: 30px 0; }
+
+/* Main marketing message and sign up button */
+/* line 46, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5; }
+
+/* line 50, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px; }
+
+/* Supporting marketing content */
+/* line 56, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+.marketing {
+  margin: 40px 0; }
+
+/* line 59, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+.marketing p + h4 {
+  margin-top: 28px; }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  /* line 68, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0; }
+
+  /* Space out the masthead */
+  /* line 73, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+  .header {
+    margin-bottom: 30px; }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  /* line 77, /Users/obvio171/code/vocefiscal.github.io/source/stylesheets/jumbotron-narrow.css.scss */
+  .jumbotron {
+    border-bottom: 0; } }
