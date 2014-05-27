@@ -74,5 +74,6 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.strategy = :submodule
+  deploy.branch = "master"
   deploy.build_before = true # default: false
 end

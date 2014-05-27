@@ -1,3 +1,4 @@
 [submodule "build"]
 	path = build
 	url = https://github.com/vocefiscal/vocefiscal.github.io.git
+	branch = master
