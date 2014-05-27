@@ -1,19 +1,38 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
-    
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title><%= current_page.data.title || "Você Fiscal" %></title>
+
+    <!-- Bootstrap core CSS -->
+    <%= stylesheet_link_tag "all" %>
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-  
+
   <body class="<%= page_classes %>">
     <%= yield %>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <%= javascript_include_tag  "all" %>
+    <!-- Placed at the end of the document so the pages load faster -->
   </body>
 </html>
