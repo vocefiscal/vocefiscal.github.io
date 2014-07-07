@@ -2,3 +2,16 @@
 @import "compass";
 @import "bootstrap";
 @import "jumbotron-narrow";
+
+body {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
