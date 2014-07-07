@@ -16,6 +16,29 @@ title: "Você Fiscal — Fiscalize sua Urna, Garanta seu Voto"
     <h1>Fiscalize sua urna, garanta seu voto</h1>
     <p class="lead">O que acontece com seu voto depois da eleição?</p>
     <p><a class="btn btn-lg btn-success" href="https://comunidade.vocefiscal.org/t/comece-por-aqui-bem-vind-a-comunidade-voce-fiscal/6" role="button">Descubra conosco</a></p>
+
+    <!-- BEGIN CUSTOMER.IO BLOCK -->
+    <div id="container">
+
+      <div id="successMessage" style="display:none"><h2>Success</h2>
+        <div id="cio_reset"><a href="#">Reset</a></div>
+      </div>
+
+      <form id="cio_form" action="https://email-opt-in.herokuapp.com/" method="post">
+      <!-- <form id="cio_form" action="http://127.0.0.1:4568/" method="post"> -->
+
+        <div id="errorMessage"></div>
+
+        <label>Nome</label><input name="name" type="text"/><br/>
+        <label>E-mail</label><input name="email" type="text"/><br/>
+
+        <button class="btn" type="submit" formmethod="post" formaction="https://email-opt-in.herokuapp.com/">Sign up</button>
+        <!-- <button class="btn" type="submit" formmethod="post" formaction="http://127.0.0.1:4568/">Sign up</button> -->
+      </form>
+      <!-- END CUSTOMER.IO BLOCK -->
+
+    </div>
+
   </div>
 
   <div class="row marketing">
