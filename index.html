@@ -36,7 +36,13 @@
       <li><a href="#">Contato</a></li>
     </ul> -->
     <h3 class="text-muted text-center">Você Fiscal</h3>
-    <div class="alert alert-success" role="alert" style="display: none;">Show! Obrigado pelo interesse :) Por favor, ajude o Você Fiscal a virar realidade compartilhando este site com mais gente. Muito obrigado!</div>
+
+    <div class="alert alert-success" role="alert" style="display: none;">
+      <strong>Show!</strong> Obrigado pelo interesse :) Por favor, ajude o Você
+      Fiscal a virar realidade compartilhando este site com mais gente.
+      Agradecemos muito!
+    </div>
+
   </div>
 
   <div class="jumbotron">
@@ -70,7 +76,7 @@
     <!-- <p><a class="btn btn-lg btn-success" href="https://comunidade.vocefiscal.org/t/comece-por-aqui-bem-vind-a-comunidade-voce-fiscal/6" role="button">Descubra conosco</a></p> -->
 
     <!-- BEGIN CUSTOMER.IO BLOCK -->
-    <div id="container">
+    <div id="cio-container">
 
       <form id="cio_form" class="form-inline" action="https://email-opt-in.herokuapp.com/" method="post">
       <!-- <form id="cio_form" action="http://127.0.0.1:4568/" method="post"> -->
@@ -117,8 +123,29 @@
       <p><strong>A população vota, a população confere.</strong></p>
     </div>
   </div>
+  <!-- BEGIN CUSTOMER.IO BLOCK -->
+  <div id="cio-container2" class="row text-center">
+    <p>Quer participar? Deixe seu email para ficar sabendo dos próximos passos:</p>
+
+    <form id="cio_form" class="form-inline" action="https://email-opt-in.herokuapp.com/" method="post">
+    <!-- <form id="cio_form" action="http://127.0.0.1:4568/" method="post"> -->
+
+      <div class="form-group">
+        <label class="sr-only">Nome</label>
+        <input name="name" type="text" placeholder="Primeiro nome" required/>
+      </div>
+      <div class="form-group">
+        <label class="sr-only">E-mail</label>
+        <input name="email" type="email" placeholder="Endereço de e-mail" required/>
+      </div>
+      <button class="btn btn-lg btn-success" type="submit" formmethod="post" formaction="https://email-opt-in.herokuapp.com/">Quero saber</button>
+      <!-- <button class="btn" type="submit" formmethod="post" formaction="http://127.0.0.1:4568/">Sign up</button> -->
+      <p style="font-size: 12px;"><br />Apenas para novidades do Você Fiscal. Spam jamais.</p>
+    </form>
+    <!-- END CUSTOMER.IO BLOCK -->
+
   <div class="row">
-    <p class="lead text-center"><a href="https://comunidade.vocefiscal.org/t/comece-por-aqui-bem-vind-a-comunidade-voce-fiscal/6">Saiba mais</a></p>
+    <p class="lead text-center"><a href="https://comunidade.vocefiscal.org/t/comece-por-aqui-bem-vind-a-comunidade-voce-fiscal/6" target="_blank">Dúvida?</a></p>
   </div>
 
 
