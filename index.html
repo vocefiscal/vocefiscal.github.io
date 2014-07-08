@@ -167,13 +167,16 @@
 <script>
 $(document).ready(function () {
   // Show the alert saying the form submission was successful
-  $("div.alert-success").toggle(document.URL.indexOf("opt_in=success") !== -1);
+  var optInSuccess = document.URL.indexOf("opt_in=success") !== -1;
+  $("div.alert-success").toggle(optInSuccess);
 
-  // Track success on Optimizely:
-  // ensures the optimizely object is defined globally using
-  window['optimizely'] = window['optimizely'] || [];
-  // sends a tracking call to Optimizely for the given event name.
-  window.optimizely.push(["trackEvent", "optInSuccess"]);
+  if (optInSuccess) {
+    // Track success on Optimizely:
+    // ensures the optimizely object is defined globally using
+    window['optimizely'] = window['optimizely'] || [];
+    // sends a tracking call to Optimizely for the given event name.
+    window.optimizely.push(["trackEvent", "optInSuccess"]);
+  }
 });
 </script>
 
