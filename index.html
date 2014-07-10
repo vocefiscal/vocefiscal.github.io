@@ -30,6 +30,7 @@
   </head>
 
   <body class="index">
+
     <div class="container">
   <div class="header">
     <!-- <ul class="nav nav-pills pull-right">
@@ -39,10 +40,24 @@
     </ul> -->
     <h3 class="text-muted text-center">Você Fiscal</h3>
 
-    <div class="alert alert-success" role="alert" style="display: none;">
-      <strong>Show!</strong> Obrigado pelo interesse :) Por favor, ajude o Você
-      Fiscal a virar realidade compartilhando este site com mais gente.
-      Agradecemos muito!
+
+    <div class="opt-in-success" style="display: none;">
+      <div class="alert alert-success" role="alert">
+        <strong>Show!</strong> Obrigado pelo interesse :) Por favor, ajude o Você
+        Fiscal a virar realidade compartilhando este site com mais gente.
+        Agradecemos muito!
+      </div>
+
+      <!-- Twitter button -->
+      <div class="row text-center">
+        <div class="twitter-button">
+          <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1404859412.html#_=1404974413602&amp;count=horizontal&amp;dnt=true&amp;hashtags=vempraurna&amp;id=twitter-widget-0&amp;lang=pt&amp;related=vocefiscal&amp;size=l&amp;text=Fiscalize%20as%20elei%C3%A7%C3%B5es%20voc%C3%AA%20tamb%C3%A9m!%20Projeto%20Voc%C3%AA%20Fiscal%20prepara%20financiamento%20coletivo%3A&amp;url=http%3A%2F%2Fwww.vocefiscal.org&amp;via=vocefiscal" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 120px; height: 28px;"></iframe>
+          <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+          </script>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -93,11 +108,10 @@
         </div>
         <button class="btn btn-lg btn-success" type="submit" formmethod="post" formaction="https://email-opt-in.herokuapp.com/">Me avise</button>
         <!-- <button class="btn" type="submit" formmethod="post" formaction="http://127.0.0.1:4568/">Sign up</button> -->
-        <p style="font-size: 12px;"><br />Apenas para novidades do Você Fiscal. Spam jamais.</p>
+        <p style="font-size: 12px;"><br />Apenas novidades do Você Fiscal. Spam jamais.</p>
       </form>
-      <!-- END CUSTOMER.IO BLOCK -->
-
     </div>
+    <!-- END CUSTOMER.IO BLOCK -->
 
   </div>
 
@@ -129,7 +143,7 @@
   <div id="cio-container2" class="row text-center">
     <p>Quer participar? Deixe seu email para ficar sabendo dos próximos passos:</p>
 
-    <form id="cio_form" class="form-inline" action="https://email-opt-in.herokuapp.com/" method="post">
+    <form id="cio_form2" class="form-inline" action="https://email-opt-in.herokuapp.com/" method="post">
     <!-- <form id="cio_form" action="http://127.0.0.1:4568/" method="post"> -->
 
       <div class="form-group">
@@ -142,8 +156,9 @@
       </div>
       <button class="btn btn-lg btn-success" type="submit" formmethod="post" formaction="https://email-opt-in.herokuapp.com/">Quero saber</button>
       <!-- <button class="btn" type="submit" formmethod="post" formaction="http://127.0.0.1:4568/">Sign up</button> -->
-      <p style="font-size: 12px;"><br />Apenas para novidades do Você Fiscal. Spam jamais.</p>
+      <p style="font-size: 12px;"><br />Apenas novidades do Você Fiscal. Spam jamais.</p>
     </form>
+  </div>
     <!-- END CUSTOMER.IO BLOCK -->
 
   <div class="row">
@@ -169,7 +184,7 @@
 $(document).ready(function () {
   // Show the alert saying the form submission was successful
   var optInSuccess = document.URL.indexOf("opt_in=success") !== -1;
-  $("div.alert-success").toggle(optInSuccess);
+  $("div.opt-in-success").toggle(optInSuccess);
 
   if (optInSuccess) {
     // Track success on Optimizely:
