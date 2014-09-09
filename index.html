@@ -1,242 +1,258 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+		<meta name="description" content="Você Fiscal ">
+		<meta name="keywords" content="você fiscal, urna eletrônica, fiscalização, garantia do voto, falha de segurança,">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
     <title>Você Fiscal — Fiscalize a Eleição, Garanta seu Voto</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
-
-    <!-- Custom styles for this template -->
+    <link href="stylesheets/all.min.css" rel="stylesheet" />
     <link href="stylesheets/jumbotron-narrow.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- Optimizely snippet -->
+
     <script src="//cdn.optimizely.com/js/1405946327.js"></script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53be3bfb24b10a0d"></script>
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53be3bfb24b10a0d"></script>
   </head>
 
   <body class="index">
-
     <div class="container">
-  <div class="header">
-    <ul class="nav nav-pills pull-right">
-      <li><a href="/">Início</a></li>
-      <li><a href="/faq">FAQ</a></li>
-      <li><a href="/contato">Contato / Imprensa</a></li>
-    </ul>
-    <h3 class="text-muted"><a href="/">Você Fiscal</a></h3>
+      <header class="header" role="banner">
+        <nav class="main-nav navbar navbar-default navbar" role="navigation">
+          <div class="container">
+            <div class="navbar-header page-scroll">
+              <button data-target="#bs-menu" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                <span class="sr-only">MENU</span>
+                <span class="icon-bar">MENU</span>
+              </button>
+              <h1 class="navbar-brand"><a href="/">Você Fiscal</a></h1>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-menu">
+              <ul class="nav nav-pills pull-right">
+                <li><a tabindex="1" href="/">Início</a></li>
+                <li><a tabindex="2" href="/faq">FAQ</a></li>
+                <li><a tabindex="3" href="/contato">Contato / Imprensa</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
 
-    <div class="opt-in-success" style="display: none;">
-      <div class="alert alert-success" role="alert">
-        <strong>Show!</strong> Obrigado pelo interesse :) Por favor, ajude o Você
-        Fiscal a virar realidade compartilhando este site com mais gente.
-        Agradecemos muito!
-      </div>
+        <div class="opt-in-success hide">
+          <div class="alert alert-success" role="alert">
+            <strong>Show!</strong> Obrigado pelo interesse :) Por favor, ajude o Você
+            Fiscal a virar realidade compartilhando este site com mais gente.
+            Agradecemos muito!
+          </div>
 
-      <!-- Twitter button -->
-      <div class="row text-center">
-        <!-- <div class="twitter-button">
-          <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1404859412.html#_=1404974413602&amp;count=horizontal&amp;dnt=true&amp;hashtags=vempraurna&amp;id=twitter-widget-0&amp;lang=pt&amp;related=vocefiscal&amp;size=l&amp;text=Fiscalize%20as%20elei%C3%A7%C3%B5es%20voc%C3%AA%20tamb%C3%A9m!%20Projeto%20Voc%C3%AA%20Fiscal%20prepara%20financiamento%20coletivo%3A&amp;url=http%3A%2F%2Fwww.vocefiscal.org&amp;via=vocefiscal" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 120px; height: 28px;"></iframe>
-          <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-          </script>
-        </div> -->
+          <!-- Twitter button -->
+          <div class="row text-center">
+            <!-- <div class="twitter-button">
+              <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1404859412.html#_=1404974413602&amp;count=horizontal&amp;dnt=true&amp;hashtags=vempraurna&amp;id=twitter-widget-0&amp;lang=pt&amp;related=vocefiscal&amp;size=l&amp;text=Fiscalize%20as%20elei%C3%A7%C3%B5es%20voc%C3%AA%20tamb%C3%A9m!%20Projeto%20Voc%C3%AA%20Fiscal%20prepara%20financiamento%20coletivo%3A&amp;url=http%3A%2F%2Fwww.vocefiscal.org&amp;via=vocefiscal" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 120px; height: 28px;"></iframe>
+              <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+              </script>
+            </div> -->
 
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_sharing_toolbox" data-url="http://www.vocefiscal.org"></div>
+            <textarea rows="1" cols="35" onclick="this.focus();this.select()" readonly="readonly">
+              http://www.vocefiscal.org
+            </textarea>
+          </div>
+        </div>
+
+      </header>
+
+      <main class="jumbotron" role="main">
+        <h1>Fiscalize a eleição, garanta seu voto</h1>
+        <h2 class="lead">O que acontece com seu voto depois da urna?</h2>
+
+        <hr class="style-eight">
+        <p>
+          <strong>Há 17 anos, dependemos da votação eletrônica.<br /> Há 2 anos, ela foi <em>comprovada</em>
+           <a href="http://www.valor.com.br/politica/3573682/urna-eletronica-e-falha-alerta-mp">insegura</a>.
+          </strong>
+        </p>
+
+        <p class="space">
+          <em>Este ano</em>, com seu apoio, <strong>vamos fazer algo a respeito</strong>.
+        </p>
+
+        <p>
+          O <strong>Você Fiscal</strong> é um projeto do <strong>Prof. Diego Aranha</strong>, da
+          Unicamp, para desenvolver um <strong>aplicativo</strong> que vai colocar
+          na sua mão e na de <strong>todo cidadão(a)</strong> o poder de
+          fiscalizar e <strong>dar transparência</strong> às eleições. Juntos, vamos
+          fazer uma <strong>apuração independente</strong> dos resultados.
+        </p>
+        <hr>
+
+        <p>
+          Para acompanhar nossa campanha de <strong><a href="http://catarse.me/VoceFiscal" target="_blank">financiamento coletivo</a></strong> e o progresso do projeto, por favor, deixe seu email:
+        </p>
+
+        <div id="cio-container">
+          <form id="cio_form" class="form-inline" action="https://email-opt-in.herokuapp.com/" method="post" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="nome">Nome</label>
+              <input name="name" id="nome" type="text" aria-label="Primeiro nome" placeholder="Primeiro nome" required/>
+            </div>
+
+            <div class="form-group">
+              <label class="sr-only" for="email">Endereço de e-mail</label>
+              <input name="email" id="email" type="email" aria-label="Endereço de e-mail" placeholder="Endereço de e-mail" required/>
+            </div>
+
+            <button class="btn btn-default btn-success" type="submit" formmethod="post" formaction="https://email-opt-in.herokuapp.com/">Me avise</button>
+
+            <p class="tips">Apenas novidades do Você Fiscal. Spam jamais.</p>
+          </form>
+          <div class="addthis_sharing_toolbox" data-url="http://www.vocefiscal.org"></div>
+          <textarea rows="1" cols="34" onclick="this.focus();this.select()" readonly="readonly">
+            http://www.vocefiscal.org
+          </textarea>
+        </div>
+      </main>
+
+      <section class="row marketing">
+        <h2>Por que o Você Fiscal é importante</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="list-group">
+              <li class="list-group-item seguranca">
+                <article>
+                  <h3>Falta segurança <i class="glyphicon glyphicon-lock"></i></h3>
+                  <p>Apesar do que é divulgado, a urna eletrônica brasileira tem <strong>falhas gravíssimas de segurança</strong>.</p>
+                </article>
+              </li>
+
+              <li class="list-group-item transparencia">
+                <article>
+                  <h3>Falta transparência <i class="glyphicon glyphicon-ban-circle"></i></h3>
+                  <p><strong>Ninguém da sociedade civil</strong> tem acesso aos detalhes de como os votos são contados pelo software da urna.</p>
+                </article>
+              </li>
+
+              <li class="list-group-item auditoria">
+                <article>
+                  <h3>Falta auditoria <i class="glyphicon glyphicon-eye-open"></i></h3>
+                  <p>Os últimos testes, mesmo limitados e curtos, <strong>quebraram com facilidade o sigilo do voto</strong>. Novos testes foram <strong>suspensos</strong> depois disso.</p>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            <ul class="list-group">
+              <li class="list-group-item celular">
+                <article>
+                  <h3>Celular na mão <i class="glyphicon glyphicon-phone"></i></h3>
+                  <p>O <strong>Você Fiscal</strong> é um aplicativo que permite a qualquer eleitor <strong>fiscalizar a urna em que votou</strong>, registrando sua contagem ao fim da eleição para <strong>detectar fraudes</strong> através de amostragem colaborativa.</p>
+                </article>
+              </li>
+
+              <li class="list-group-item rigor">
+                <article>
+                  <h3>Rigor acadêmico <i class="glyphicon glyphicon-book"></i></h3>
+                  <p>O Você Fiscal é iniciativa do <strong>Prof. Diego Aranha</strong>, da Unicamp, pesquisador respeitado nas áreas de segurança computacional e criptografia.</p>
+                </article>
+              </li>
+
+              <li class="list-group-item participacao">
+                <article>
+                  <h3>Participação popular <i class="glyphicon glyphicon-user"></i></h3>
+                  <p><strong>A população vota, a população confere.</strong></p>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="cio-container2" class="row text-center">
+        <p>Quer participar? Deixe seu email para ficar sabendo dos próximos passos:</p>
+
+        <form id="cio_form2" class="form-inline" action="https://email-opt-in.herokuapp.com/" method="post">
+        <!-- <form id="cio_form" action="http://127.0.0.1:4568/" method="post"> -->
+
+          <div class="form-group">
+            <label class="sr-only" >Nome</label>
+            <input name="name" type="text" placeholder="Primeiro nome" required/>
+          </div>
+          <div class="form-group">
+            <label class="sr-only">E-mail</label>
+            <input name="email" type="email" placeholder="Endereço de e-mail" required/>
+          </div>
+          <button class="btn btn-default btn-success" type="submit" formmethod="post" formaction="https://email-opt-in.herokuapp.com/">Quero saber</button>
+
+          <p class="tips">Apenas novidades do Você Fiscal. Spam jamais.</p>
+        </form>
+
         <div class="addthis_sharing_toolbox" data-url="http://www.vocefiscal.org"></div>
-
-        <textarea rows="1" cols="35" onclick="this.focus();this.select()" readonly="readonly">
+        <textarea rows="1" cols="30" onclick="this.focus();this.select()" readonly="readonly">
           http://www.vocefiscal.org
         </textarea>
-      </div>
+      </section>
 
+      <section class="row">
+        <p class="lead text-center">
+          <a href="mailto:contato@vocefiscal.org" target="_blank">Dúvida? Entre em contato.</a>
+        </p>
+      </section>
 
-    </div>
-
+      <footer class="footer" role="contentinfo">
+        <p class="text-center" style="font-size: 14px;">
+          <span id="insegura">*: Valor Econômico: <a href="http://www.valor.com.br/politica/3573682/urna-eletronica-e-falha-alerta-mp" target="_blank">Urna eletrônica é falha, alerta MP</a>.</span><br />
+          Você Fiscal 2014 &copy; <a href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR" aria-label="Creative Commons License" lang="en">CC-BY 4.0</a> &middot;
+          Doe Bitcoin: <code class="text-muted">1AqGXmn5MyuRopyRu7nCgUavs13yUHZAo6</code> &middot; <br>
+          Visite <a href="https://comunidade.vocefiscal.org" target="_blank">nosso fórum</a> |
+          <a href="http://www.vocefiscal.org/faq">Perguntas Freqüentes</a>
+          <br />
+          +55 11 98955-8070
+        </p>
+      </footer>
   </div>
 
-  <div class="jumbotron">
-    <h1>Fiscalize a eleição, garanta seu voto</h1>
-    <p class="lead">O que acontece com seu voto depois da urna?</p>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Show the alert saying the form submission was successful
+      var optInSuccess = document.URL.indexOf("opt_in=success") !== -1;
+      $("div.opt-in-success").toggle(optInSuccess);
 
-    <hr class="style-eight">
-    <p>
-      <strong>Há 17 anos, dependemos da votação eletrônica.<br />Há 2 anos, ela foi <em>comprovada</em> insegura*.<br /></strong>
-    </p>
-    <hr />
-    <p>
-      <em>Este ano</em>, com seu apoio, <strong>vamos fazer algo a respeito</strong>.
-    </p>
-    <hr />
-    <p>
+      if (optInSuccess) {
+        // Track success on Optimizely:
+        // ensures the optimizely object is defined globally using
+        window['optimizely'] = window['optimizely'] || [];
+        // sends a tracking call to Optimizely for the given event name.
+        window.optimizely.push(["trackEvent", "optInSuccess"]);
+      }
+    });
+  </script>
 
-      O <strong>Você Fiscal</strong> é um projeto do <strong>Prof. Diego Aranha</strong>, da
-      Unicamp, para desenvolver um <strong>aplicativo</strong> que vai colocar
-      na sua mão e na de <strong>todo cidadão e cidadã</strong> o poder de
-      fiscalizar e <strong>dar transparência</strong> às eleições. Juntos, vamos
-      fazer uma <strong>apuração independente</strong> dos resultados.
+  <script src="javascripts/all.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    </p>
-    <hr />
-    <p>
-      >> Para acompanhar nossa campanha de <strong><a href="http://catarse.me/VoceFiscal" target="_blank">financiamento coletivo</a></strong> e o progresso do projeto, por favor, deixe seu email:
-    </p>
-
-    <!-- <img src="images/cover.png" /> -->
-    <!-- <p><a class="btn btn-lg btn-success" href="https://comunidade.vocefiscal.org/t/comece-por-aqui-bem-vind-a-comunidade-voce-fiscal/6" role="button">Descubra conosco</a></p> -->
-
-    <!-- BEGIN CUSTOMER.IO BLOCK -->
-    <div id="cio-container">
-
-      <form id="cio_form" class="form-inline" action="https://email-opt-in.herokuapp.com/" method="post">
-      <!-- <form id="cio_form" action="http://127.0.0.1:4568/" method="post"> -->
-
-        <div class="form-group">
-          <label class="sr-only">Nome</label>
-          <input name="name" type="text" placeholder="Primeiro nome" required/>
-        </div>
-        <div class="form-group">
-          <label class="sr-only">E-mail</label>
-          <input name="email" type="email" placeholder="Endereço de e-mail" required/>
-        </div>
-        <button class="btn btn-lg btn-success" type="submit" formmethod="post" formaction="https://email-opt-in.herokuapp.com/">Me avise</button>
-        <!-- <button class="btn" type="submit" formmethod="post" formaction="http://127.0.0.1:4568/">Sign up</button> -->
-        <p style="font-size: 12px;"><br />Apenas novidades do Você Fiscal. Spam jamais.</p>
-      </form>
-      <!-- Go to www.addthis.com/dashboard to customize your tools -->
-      <div class="addthis_sharing_toolbox" data-url="http://www.vocefiscal.org"></div>
-
-      <textarea rows="1" cols="34" onclick="this.focus();this.select()" readonly="readonly">
-        http://www.vocefiscal.org
-      </textarea>
-
-    </div>
-    <!-- END CUSTOMER.IO BLOCK -->
-
-  </div>
-
-  <div class="row marketing">
-    <h2>Por que o Você Fiscal é importante</h2>
-    <div class="col-lg-6">
-      <h3>Falta segurança</h3>
-      <p>Apesar do que é divulgado, a urna eletrônica brasileira tem <strong>falhas gravíssimas de segurança</strong>.</p>
-
-      <h3>Falta transparência</h3>
-      <p><strong>Ninguém da sociedade civil</strong> tem acesso aos detalhes de como os votos são contados pelo software da urna.</p>
-
-      <h3>Falta auditoria</h3>
-      <p>Os últimos testes, mesmo limitados e curtos, <strong>quebraram com facilidade o sigilo do voto</strong>. Novos testes foram <strong>suspensos</strong> depois disso.</p>
-    </div>
-
-    <div class="col-lg-6">
-      <h3>Celular na mão</h3>
-      <p>O <strong>Você Fiscal</strong> é um aplicativo que permite a qualquer eleitor <strong>fiscalizar a urna em que votou</strong>, registrando sua contagem ao fim da eleição para <strong>detectar fraudes</strong> através de amostragem colaborativa.</p>
-
-      <h3>Rigor acadêmico</h3>
-      <p>O Você Fiscal é iniciativa do <strong>Prof. Diego Aranha</strong>, da Unicamp, pesquisador respeitado nas áreas de segurança computacional e criptografia.</p>
-
-      <h3>Participação popular</h3>
-      <p><strong>A população vota, a população confere.</strong></p>
-    </div>
-  </div>
-  <!-- BEGIN CUSTOMER.IO BLOCK -->
-  <div id="cio-container2" class="row text-center">
-    <p>Quer participar? Deixe seu email para ficar sabendo dos próximos passos:</p>
-
-    <form id="cio_form2" class="form-inline" action="https://email-opt-in.herokuapp.com/" method="post">
-    <!-- <form id="cio_form" action="http://127.0.0.1:4568/" method="post"> -->
-
-      <div class="form-group">
-        <label class="sr-only">Nome</label>
-        <input name="name" type="text" placeholder="Primeiro nome" required/>
-      </div>
-      <div class="form-group">
-        <label class="sr-only">E-mail</label>
-        <input name="email" type="email" placeholder="Endereço de e-mail" required/>
-      </div>
-      <button class="btn btn-lg btn-success" type="submit" formmethod="post" formaction="https://email-opt-in.herokuapp.com/">Quero saber</button>
-      <!-- <button class="btn" type="submit" formmethod="post" formaction="http://127.0.0.1:4568/">Sign up</button> -->
-      <p style="font-size: 12px;"><br />Apenas novidades do Você Fiscal. Spam jamais.</p>
-    </form>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <div class="addthis_sharing_toolbox" data-url="http://www.vocefiscal.org"></div>
-
-    <textarea rows="1" cols="30" onclick="this.focus();this.select()" readonly="readonly">
-      http://www.vocefiscal.org
-    </textarea>
-
-  </div>
-    <!-- END CUSTOMER.IO BLOCK -->
-
-  <div class="row">
-    <p class="lead text-center"><a href="mailto:contato@vocefiscal.org" target="_blank">Dúvida? Entre em contato.</a></p>
-  </div>
-
-
-  <div class="footer">
-    <p class="text-center" style="font-size: 14px;">
-      *: Valor Econômico: <a href="http://www.valor.com.br/politica/3573682/urna-eletronica-e-falha-alerta-mp" target="_blank">Urna eletrônica é falha, alerta MP</a>.<br />
-      Você Fiscal 2014 &copy; <a href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR" target="_blank">CC-BY 4.0</a> &middot;
-      Doe Bitcoin: <code class="text-muted">1AqGXmn5MyuRopyRu7nCgUavs13yUHZAo6</code> &middot;
-      Visite <a href="https://comunidade.vocefiscal.org" target="_blank">nosso fórum</a> <br />
-      <a href="http://www.vocefiscal.org/faq">FAQ</a>
-      <br />
-      +55 11 98955-8070
-    </p>
-  </div>
-
-</div> <!-- /container -->
-
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script>
-$(document).ready(function () {
-  // Show the alert saying the form submission was successful
-  var optInSuccess = document.URL.indexOf("opt_in=success") !== -1;
-  $("div.opt-in-success").toggle(optInSuccess);
-
-  if (optInSuccess) {
-    // Track success on Optimizely:
-    // ensures the optimizely object is defined globally using
-    window['optimizely'] = window['optimizely'] || [];
-    // sends a tracking call to Optimizely for the given event name.
-    window.optimizely.push(["trackEvent", "optInSuccess"]);
-  }
-});
-</script>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <script src="javascripts/all.js" type="text/javascript"></script>
-    <!-- Placed at the end of the document so the pages load faster -->
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-655556-28', 'auto');
-      ga('send', 'pageview');
-    </script>
-
-    <!-- Hellobar -->
-    <script type="text/javascript" src="//s3.amazonaws.com/scripts.hellobar.com/0e48b50dd61308f9fb868da8616c56d4f627b019.js"></script>
+    ga('create', 'UA-655556-28', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script type="text/javascript" src="//s3.amazonaws.com/scripts.hellobar.com/0e48b50dd61308f9fb868da8616c56d4f627b019.js"></script>
   </body>
 </html>
