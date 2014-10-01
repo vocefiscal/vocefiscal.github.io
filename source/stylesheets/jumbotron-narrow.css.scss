@@ -49,6 +49,7 @@ body {
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
+  white-space: normal;
 }
 
 /* Supporting marketing content */
@@ -57,6 +58,10 @@ body {
 }
 .marketing p + h4 {
   margin-top: 28px;
+}
+
+.play-store {
+  margin: 0 auto;
 }
 
 /* Responsive: Portrait tablets and up */
